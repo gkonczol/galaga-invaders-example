@@ -34,9 +34,9 @@ class GalagaInvaders
   def key_pressed(key)
     case key
     when 'a'
-      @ship.move_left
+      @ship.move_left(5)
     when 'd'
-      @ship.move_right
+      @ship.move_right(5)
     when ' '
       @ship.fire_missile
     end
