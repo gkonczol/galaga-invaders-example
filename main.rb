@@ -40,10 +40,10 @@ class GalagaInvaders
     elsif key == 'd'
       ship.move_right
     elsif key == ' '
-      ship.fire(missiles)
+      missiles.launch_for(ship)
     end
     if key == 'p'
-      alien.fire(missiles)
+      missiles.launch_for(alien)
     end
   end
 
@@ -54,9 +54,10 @@ GalagaInvaders.new.show
 =begin
 Reflecting on Principle
 -----------------------
-1. True or False: Good OO design eliminates dependencies.
+1. True or False: Good OO design eliminates dependencies. False
 2. Briefly list four ways in which a class that collaborates with another class
-   is dependent on it. (For example, one dependency is knowing the other class name.)
-3. What are two primary factors to consider when assessing the risk of a dependency?
-4. What is Metz's rule of thumb for choosing a dependency direction?
+   is dependent on it. (For example, one dependency is knowing the other class name.) Knowing another class's name, knowing the order of arguments, 
+                                                                                      knowing the type of data structures used, using its contructor.
+3. What are two primary factors to consider when assessing the risk of a dependency?  How often is the other class used. Where is the other class used.
+4. What is Metz's rule of thumb for choosing a dependency direction? Have a dependency from a class that changes more to a class that changes less.
 =end
