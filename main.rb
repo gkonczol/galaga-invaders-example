@@ -56,9 +56,9 @@ GalagaInvaders.new.show
 =begin
 Reflecting on Principle
 -----------------------
-1. What is "duck typing" and what does it have to do with polymorphism?
+1. What is "duck typing" and what does it have to do with polymorphism? Duck types are interfaces that aren't tied to a class.
 2. What are some common code smells that indicate the need for relying on a
-   "duck type" rather than a concrete class?
+   "duck type" rather than a concrete class? Case statements based on class name, if statements with kind_of?, is_a?, or responds_to? conditions.
 3. True or False: Abstractions like duck typing make code explicitly easier to
-   understand, vs. using concrete types.
+   understand, vs. using concrete types. False.
 =end
